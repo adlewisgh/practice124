@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.andrewlewis.fitly.MainActivity"
+    android:background="#fff7e6">
+
+
+    <Button
+        android:text="Login Page"
+        android:layout_width="130dp"
+        android:layout_height="82dp"
+        android:id="@+id/loginPageButton"
+        app:layout_anchorGravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="178dp" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="76dp">
+
+            <ImageView
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/fitlylogo"
+                android:id="@+id/fitly_logo"
+                android:layout_marginLeft="100dp"
+                android:layout_width="200dp"
+                android:layout_alignBottom="@+id/hamburger_menu"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                app:srcCompat="@drawable/weightlift"
+                android:id="@+id/imageView5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="33dp"
+                android:layout_alignTop="@+id/fitly_logo"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:id="@+id/hamburger_menu"
+                android:layout_weight="0.06"
+                android:layout_below="@+id/settings_text"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="22dp" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
